@@ -1,0 +1,17 @@
+{
+    "name": "Page 3Der",
+    "description" : "將網頁以3D瀏覽。由貓虎皮開發。",
+    "version": "1.0.0",
+    "manifest_version": 2,
+    "icons": {
+      "128": "/3dp.png", 
+      "16": "/3dp.png",
+      "48": "/3dp.png"
+    },
+    "content_scripts": [ {
+      "all_frames": false,
+      "js": [ "3dp.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_end"
+    } ]
+}
